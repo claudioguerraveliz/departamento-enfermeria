@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Valdés Jara;Angela;;;
+FN:Angela Valdés Jara
+TITLE:Candidata Dra. Enfermería
+ORG:Universidad de Antofagasta;Departamento de Enfermería
+ROLE:Directora Departamento de Enfermería
+TEL;TYPE=CELL:+56994325796
+TEL;TYPE=WORK:+56552637423
+EMAIL;TYPE=INTERNET:angela.valdes@uantof.cl
+URL:https://www.uantof.cl
+URL;TYPE=ORCID:https://orcid.org/0000-0003-1539-149X
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/angela-vald%C3%A9s-8a72b55b
+NOTE:Directora del Departamento de Enfermería\nFacultad de Ciencias de la Salud\nUniversidad de Antofagasta
+END:VCARD
