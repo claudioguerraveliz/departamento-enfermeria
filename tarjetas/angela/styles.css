@@ -72,8 +72,8 @@ body{
 }
 
 .photo{
-  width:150px;
-  height:150px;
+  width:250px;
+  height:250px;
   border-radius:999px;
   object-fit:cover;
   border:6px solid var(--ring);
