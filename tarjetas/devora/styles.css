@@ -1,0 +1,245 @@
+:root{
+  --bg:#f3f6fb;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+
+  --blue:#2563eb;
+  --blue2:#1d4ed8;
+
+  --orcid:#a6ce39;
+  --linkedin:#2f64d6;
+  --rg:#15b8a6;
+  --web:#2c7be5;
+
+  --ring:#3b82f6;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page{
+  min-height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.card {
+  width: 100%;
+  max-width: clamp(360px, 92vw, 440px);
+  margin: 16px auto;
+  padding: 20px;
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+/* Header */
+.card-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:6px 4px 12px;
+}
+
+.brand-logo{
+  height:55px;          /* ✅ como tu ajuste final */
+  width:auto;
+  object-fit:contain;
+}
+
+.card-title{
+  margin:0;
+  font-size:25px;
+  font-weight:800;
+  text-align:center;
+  flex:1;
+}
+
+/* Foto */
+.photo-wrap{
+  display:flex;
+  justify-content:center;
+  margin:10px 0 14px;
+}
+
+.photo{
+  width:150px;
+  height:150px;
+  border-radius:999px;
+  object-fit:cover;
+  border:6px solid var(--ring);
+}
+
+/* Nombre y textos */
+.name{
+  margin:0;
+  text-align:center;
+  font-size:28px;
+  line-height:1.15;
+  font-weight:900;
+}
+
+.role{
+  margin:10px 0 0;
+  text-align:center;
+  color: var(--blue);
+  font-weight:800;
+  font-size:20px;
+}
+
+.org{
+  margin:12px 0 18px;
+  text-align:center;
+  color: var(--muted);
+  font-weight:600;
+  line-height:1.35;
+}
+
+/* Info blocks */
+.info{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin: 0 0 14px;
+}
+
+.info-row{
+  background:#f6f8fc;
+  border-radius:14px;
+  padding:14px 16px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.info-label{
+  color:#6b7280;
+  font-weight:700;
+  font-size:14px;
+}
+
+.info-value{
+  font-size:20px;
+  font-weight:900;
+  letter-spacing:.2px;
+  word-break:break-word;
+}
+
+.info-value a{
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Links */
+.links{
+  display:flex;
+  flex-direction:column;
+  gap:12px; /* ✅ separados uno bajo otro */
+  margin: 12px 0 14px;
+}
+
+.link-card{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 16px;
+  border-radius:16px;
+  text-decoration:none;
+  color:white;
+  font-weight:900;
+  font-size:18px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.10);
+  transition: transform .12s ease, filter .12s ease;
+}
+
+.link-card:active{ transform: scale(.99); }
+.link-card:hover{ filter: brightness(1.02); }
+
+.link-icon{
+  width:22px;     /* ✅ evita iconos gigantes */
+  height:22px;    /* ✅ evita iconos gigantes */
+  object-fit:contain;
+  flex:0 0 22px;
+  border-radius:6px;
+}
+
+.link-text{
+  display:flex;
+  align-items:center;
+}
+
+/* Colores por bloque */
+.link-orcid{ background: var(--orcid); }
+.link-linkedin{ background: var(--linkedin); }
+.link-researchgate{ background: var(--rg); }
+.link-web{ background: var(--web); }
+
+/* Save button */
+.save-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin: 6px 0 6px;
+  background: #3b67f2;
+  color:white;
+  text-decoration:none;
+  font-weight:900;
+  font-size:18px;
+  padding:16px 16px;
+  border-radius:18px;
+  box-shadow: 0 14px 26px rgba(59,103,242,.25);
+}
+
+.save-ico{ font-size:20px; }
+
+/* Footer */
+.card-footer{
+  margin-top:14px;
+  text-align:center;
+  padding:10px 6px 0;
+}
+
+.footer-strip{
+  max-width: 72%;
+  height:auto;
+  object-fit:contain;
+  opacity:.95;
+}
+
+.footer-text{
+  margin:10px 0 0;
+  color:#6b7280;
+  font-weight:700;
+  font-size:14px;
+  line-height:1.35;
+}
+
+/* Responsive */
+@media (max-width: 360px){
+  .name{ font-size:24px; }
+  .role{ font-size:18px; }
+  .info-value{ font-size:18px; }
+  .link-card{ font-size:17px; }
+}
+@media (max-width: 430px) {
+  .card {
+    margin: 12px auto;
+    padding: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 460px;
+  }
+}
